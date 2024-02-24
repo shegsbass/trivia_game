@@ -1,3 +1,5 @@
+![](https://github.com/shegsbass/trivia_game/blob/master/trivia.gif)
+
 # Trivia Game Flutter App Documentation
 ## Overview
 This documentation provides a comprehensive guide to the Flutter-based Trivia Game application. The app comprises several key classes and screens, each serving specific functions within the game.

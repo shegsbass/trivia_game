@@ -96,7 +96,7 @@ class _GameScreenState extends State<GameScreen> {
 
 
   void onRestart(BuildContext context) {
-    // Reset necessary variables when restarting the game
+    // Reset variables when restarting the game
     setState(() {
       correctCount = 0;
       wrongCount = 0;
@@ -242,13 +242,12 @@ class _GameScreenState extends State<GameScreen> {
                                   decoration: BoxDecoration(),
                                   child: Stack(
                                     children: [
-                                      // Replace this with your desired alarm icon
                                       Icon(Icons.alarm, color: Colors.white),
                                     ],
                                   ),
                                 ),
 
-                                SizedBox(width: 8), // Adjust the spacing as needed
+                                SizedBox(width: 8),
                                 TextSize14(
                                   text: formatTime(elapsedSeconds),
                                   color: Colors.white,
@@ -374,10 +373,6 @@ class _GameScreenState extends State<GameScreen> {
       ),
     );
   }
-
-  // bool checkIfOptionIsCorrect(String option, String correctAnswer) {
-  //   return option == correctAnswer;
-  // }
 }
 
 
@@ -474,7 +469,7 @@ class _CustomListItemState extends State<CustomListItem> {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  const SizedBox(width: 24), // Adjust spacing between label and option
+                  const SizedBox(width: 24),
                   Text(
                     widget.option,
                     style: TextStyle(
